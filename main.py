@@ -1,5 +1,11 @@
 
 def count_batteries_by_usage(cycles):
+  if cycles<310:
+    count_batteries_by_usage["lowCount"]=count_batteries_by_usage["lowCount"]+1
+  elif cycles>=310 and cycles<=929:
+    count_batteries_by_usage["mediumCount"]=count_batteries_by_usage["mediumCount"]+1
+  else:
+    count_batteries_by_usage["highCount"]=count_batteries_by_usage["highCount"]+1
   return {
     "lowCount": 0,
     "mediumCount": 0,
